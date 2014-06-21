@@ -1,0 +1,47 @@
+{
+    "name": "typo3/builddocstypo3org",
+    "description": "Distribution for build.docs.typo3.org",
+    "license": "GPL-3.0+",
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://git.typo3.org/Packages/TYPO3.Docs.git"
+        },
+        {
+            "type": "git",
+            "url": "git://git.typo3.org/Documentation/RestTools.git"
+        },
+        {
+            "type": "git",
+            "url": "git://github.com/xperseguers/TYPO3.docs.ter-automation.git"
+        }
+    ],
+    "require": {
+        "typo3/docs-renderinghub": "dev-master",
+
+        "typo3/docs-builder": "dev-renderinghub-integration as 1.0.0",
+        "typo3/resttools": "@dev",
+        "typo3/swiftmailer": "*",
+        "typo3/jobqueue-beanstalkd": "@dev",
+        "typo3/jobqueue-common": "@dev",
+        "pda/pheanstalk": "@dev",
+
+        "doctrine/migrations": "@dev"
+    },
+    "require-dev": {
+        "typo3/buildessentials": "2.2.*",
+        "mikey179/vfsstream": "1.2.*",
+        "phpunit/phpunit": "4.1.*",
+        "typo3/surf": "dev-master"
+    },
+    "scripts": {
+        "post-update-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "TYPO3\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update":"TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install":"TYPO3\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
+    }
+}

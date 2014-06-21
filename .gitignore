@@ -1,0 +1,13 @@
+/Build/*
+!/Build/Surf/
+/Configuration/*
+!/Configuration/Routes.yaml
+/Data/*
+/Packages/*
+/Web/*
+/bin/*
+/Readme.txt
+/Upgrading.txt
+/flow
+/flow.bat
+/composer.phar
