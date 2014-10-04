@@ -130,7 +130,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         },
         install: {
           libreoffice: false, # "true" whether you want conversion of legacy manual.sxw conversion. Takes time to download...
-          texlive: false # "true" whether you want PDF generation. Takes time to download...
+          texlive: false, # "true" whether you want PDF generation. Takes time to download...
+          cron: false
         }
       }
     }
