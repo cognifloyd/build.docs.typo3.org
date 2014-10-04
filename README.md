@@ -12,8 +12,7 @@ This repository contains a Vagrant setup so that you can run this application on
 For the first installation, consider one good hour to walk through all the steps which will depend on the speed of your network along with the performance of your machine.
 There will about 500 Mb to download which includes a virtual machine and the necessary packages.
 
-
-The next step is to download the source files.
+The fist step is to download the source files.
 
 <pre>
   composer install
@@ -30,6 +29,10 @@ The second step is to create the VM and provision it.
 	# Prerequisite: vagrant must be > 1.5
 	# Download from http://www.vagrantup.com/downloads.html
 	vagrant --version
+
+	# Prerequisite: chef must be >= 0.3
+	# Download from http://downloads.getchef.com/chef-dk
+	chef --version
 
 	# Install Vagrant plugin, will be asked anyway later.
 	vagrant plugin install vagrant-cachier
