@@ -1,11 +1,11 @@
-Overview
-========
+TYPO3 Docs Rendering Hub
+========================
 
 This is the Flow distribution for the Docs Rendering Hub (build.docs.typo3.org) see git.typo3.org/Packages/TYO3.Docs.git for the Flow app.
 
 
-Vagrant setup
-=============
+Installation
+------------
 
 This repository contains a Vagrant setup so that you can run this application on your local machine.
 
@@ -42,8 +42,13 @@ The second step is to create the VM and provision it.
 	# Fire up the Virtual Machine... this may take some time as it will download an empty VM box
 	vagrant up
 
-	# Configure the Vagrantfile
-	# Check possible options at the bottom of the file and re-provision the VM.
+	# The VM should be accessible at:
+	http://build.docs.typo3.dev/
+
+	# When developing, synchronize files as you edit them.
+	vagrant rsync-auto
+
+	# Check possible options at the bottom of the Vagrant file and re-provision the VM.
 	edit Vagrantfile
 	vagrant reload
 
