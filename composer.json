@@ -18,8 +18,13 @@
         {
             "type": "git",
             "url": "git://github.com/xperseguers/TYPO3.docs.ter-automation.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:mneuhaus/TYPO3.Jobqueue.Doctrine.git"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "typo3/docs-renderinghub": "dev-master",
 
@@ -28,9 +33,13 @@
         "typo3/swiftmailer": "*",
         "typo3/jobqueue-beanstalkd": "@dev",
         "typo3/jobqueue-common": "@dev",
-        "pda/pheanstalk": "@dev",
 
-        "doctrine/migrations": "@dev"
+        "doctrine/migrations": "@dev",
+
+        "typo3/jobqueue-doctrine": "@dev",
+        "flowpack/expose": "@dev",
+        "famelo/common": "@dev",
+        "famelo/bean": "@dev"
     },
     "require-dev": {
         "typo3/buildessentials": "2.2.*",
