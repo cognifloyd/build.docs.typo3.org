@@ -67,7 +67,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Share site folder into releases folder
-  config.vm.synced_folder ".", "/var/www/vhosts/build.docs.typo3.org/releases/vagrant",
+  config.vm.synced_folder ".", "/var/www/vhosts/build.docs.typo3.org/releases/current",
                           type: "rsync",
                           rsync__exclude: [
                             ".git/",
