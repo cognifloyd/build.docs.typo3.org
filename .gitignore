@@ -1,5 +1,6 @@
 *.idea
 .vagrant
+atlassian-ide-plugin.xml
 Berksfile.lock
 /Build/*
 !/Build/Surf/

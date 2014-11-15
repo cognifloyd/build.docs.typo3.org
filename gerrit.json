@@ -1,7 +1,10 @@
 {
+	"TYPO3.Fluid": {
+		"!!![WIP][FEATURE] ControllerInheritence Fallbacks": "31939"
+	},
 	"TYPO3.Docs.RenderingHub": {
-		"[FEATURE] Added User Login and basic Frame": "31888",
 		"Updated Domain Model": "33357",
+		"Added Controller for Package, Document and DocumentVariant": "33358",
 		"[WIP] Refactoring the workflow": "33361"
 	}
 }
