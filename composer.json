@@ -22,6 +22,10 @@
         {
             "type": "git",
             "url": "git@github.com:mneuhaus/TYPO3.Jobqueue.Doctrine.git"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:cognifloyd/TYPO3.Jobqueue.Rabbitmq.git"
         }
     ],
     "minimum-stability": "dev",
@@ -31,7 +35,7 @@
         "typo3/docs-builder": "dev-renderinghub-integration as 1.0.0",
         "typo3/resttools": "@dev",
         "typo3/swiftmailer": "*",
-        "typo3/jobqueue-beanstalkd": "@dev",
+        "typo3/jobqueue-rabbitmq": "@dev",
         "typo3/jobqueue-common": "@dev",
 
         "doctrine/migrations": "@dev",

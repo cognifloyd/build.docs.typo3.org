@@ -115,6 +115,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.custom_config_path = "Vagrantfile.chef"
     chef.log_level = ENV['CHEF_LOG_LEVEL'] || :info
 
+    # this should match the attribute from site-mqtypo3org
+    rabbitmq_version = '3.2.2'
+
     chef.json = {
       mysql: {
         server_root_password: 'root',
@@ -133,11 +136,35 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           texlive: false, # "true" whether you want PDF generation. Takes time to download...
           cron: false
         }
+      },
+      "rabbitmq" => {
+        # based on site-mqtypo3org
+        version: "#{rabbitmq_version}",
+        package: "https://www.rabbitmq.com/releases/rabbitmq-server/v#{rabbitmq_version}/rabbitmq-server_#{rabbitmq_version}-1_all.deb",
+
+        virtualhosts: ["infrastructure", "infrastructure_dev"],
+
+        enabled_users: [
+          "name" => "devdocs",
+          "password" => "devdocs",
+          "tag" => "administrator",
+          "rights" => [{
+            "vhost" => "infrastructure_dev",
+            "conf" => ".*", #create or destroy resources or alter their behavior
+            "write" => ".*", #inject messages into a resource
+            "read" => ".*", #retrieve messages from a resource
+          }],
+        ],
+        disabled_users: ["guest"],
       }
     }
 
     chef.run_list = [
-      "recipe[site-builddocstypo3org::default]"
+      "recipe[site-builddocstypo3org::default]",
+      "recipe[rabbitmq::default]",
+      "recipe[rabbitmq::plugin_management]",
+      "recipe[rabbitmq::user_management]",
+      "recipe[rabbitmq::mgmt_console]"
     ]
   end
 end

@@ -125,3 +125,28 @@ To adjust configuration open ``Vagrantfile`` file and change settings according 
   # Turn on verbose Chef logging if necessary
   chef.log_level      = :debug
 </pre>
+
+
+Development Software in Vagrant
+===============================
+
+Rabbitmq
+--------
+
+The vagrant box comes with Rabbitmq. Use these credentials for development:
+
+* host: 127.0.0.1
+* port: 5672
+* username: devdocs
+* password: devdocs
+* vhost: infrastructure_dev
+
+[The managmeent interface](http://192.168.188.140:15672) is a convenient way to watch what's going on.
+Use the user/pass mentioned above to get into the management interface.
+
+*TODO*: Include an example settings.yaml file.
+
+When the app uses mq.typo3.org, it will use the 'infrastructure' vhost for production, and
+'infrastructure_dev' for development. The server team can provide login credentials if required, however,
+the credentials on the production server will probably be made available through chef.
+That is not setup yet, so, for now, we'll have to manually include the credentials in the settings files.
