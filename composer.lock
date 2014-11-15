@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cf15997f67d0420af2f40949baddc1dd",
+    "hash": "42b88daf3f4df2b811ad508d0fd2744d",
     "packages": [
         {
             "name": "composer/installers",
@@ -1391,14 +1391,14 @@
         },
         {
             "name": "typo3/eel",
-            "version": "dev-master",
+            "version": "2.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Eel.git",
-                "reference": "fab852d50bfebff879ee0897ecfdc60bbed66a8b"
+                "reference": "233a95bfc547559d31a0f1b6b7bd906b919c381e"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.0-beta1"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1411,15 +1411,15 @@
                 "LGPL-3.0+"
             ],
             "description": "The Embedded Expression Language (Eel) is a building block for creating Domain Specific Languages",
-            "time": "2014-09-11 18:09:55"
+            "time": "2014-11-14 07:47:15"
         },
         {
             "name": "typo3/flow",
-            "version": "dev-master",
+            "version": "2.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Flow.git",
-                "reference": "f90545ecaac91345f71be53fef6e1730417076e3"
+                "reference": "6c758c4532d0e9d8ea632ef7e2016a13f47cd29d"
             },
             "require": {
                 "composer/installers": "~1.0.2",
@@ -1433,9 +1433,9 @@
                 "symfony/console": "2.*",
                 "symfony/dom-crawler": "2.5.*",
                 "symfony/yaml": "2.5.*",
-                "typo3/eel": "*",
-                "typo3/fluid": "*",
-                "typo3/party": "*"
+                "typo3/eel": "2.3.0-beta1",
+                "typo3/fluid": "2.3.0-beta1",
+                "typo3/party": "2.3.0-beta1"
             },
             "suggest": {
                 "doctrine/data-fixtures": "To manage and execute the loading of data fixtures for the Doctrine ORM or ODM"
@@ -1452,18 +1452,18 @@
             ],
             "description": "TYPO3 Flow Application Framework",
             "homepage": "http://flow.typo3.org",
-            "time": "2014-11-14 08:00:26"
+            "time": "2014-11-14 07:47:15"
         },
         {
             "name": "typo3/fluid",
-            "version": "dev-master",
+            "version": "2.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Fluid.git",
-                "reference": "fa99600196bbb7241c2fcdf59384317f057e960d"
+                "reference": "1348d3660c89927e81a3db0657180ab29c9eb006"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.0-beta1"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1476,7 +1476,7 @@
                 "LGPL-3.0+"
             ],
             "description": "Next-Generation Templating Framework for TYPO3 Flow and TYPO3 Neos, also backported to TYPO3 CMS",
-            "time": "2014-11-13 11:27:56"
+            "time": "2014-11-14 07:47:16"
         },
         {
             "name": "typo3/jobqueue-beanstalkd",
@@ -1589,14 +1589,14 @@
         },
         {
             "name": "typo3/party",
-            "version": "dev-master",
+            "version": "2.3.0-beta1",
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Party.git",
-                "reference": "9cd749deaa0bc6e2bc18a210bb269dd633522327"
+                "reference": "bb909164856edbf605c6a998084807730ac580ae"
             },
             "require": {
-                "typo3/flow": "*"
+                "typo3/flow": "2.3.0-beta1"
             },
             "type": "typo3-flow-framework",
             "autoload": {
@@ -1609,7 +1609,7 @@
                 "LGPL-3.0+"
             ],
             "description": "A PHP implementation of the OASIS Customer Information Quality (CIQ) XML Standard.",
-            "time": "2014-03-27 00:29:08"
+            "time": "2014-11-14 07:47:16"
         },
         {
             "name": "typo3/resttools",
@@ -2472,6 +2472,7 @@
         "flowpack/expose": 20,
         "famelo/common": 20,
         "famelo/bean": 20,
+        "typo3/flow": 20,
         "typo3/surf": 20
     },
     "prefer-stable": false,
