@@ -26,6 +26,10 @@ There will about 500 Mb to download which includes a virtual machine and the nec
 The fist step is to download the source files.
 
 <pre>
+  git clone https://github.com/TYPO3-infrastructure/build.docs.typo3.org.git
+  cd build.docs.typo3.org.git
+
+  # Install PHP dependencies
   composer install
 </pre>
 
