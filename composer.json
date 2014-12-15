@@ -45,7 +45,8 @@
         "famelo/common": "@dev",
         "famelo/bean": "@dev",
 
-		"typo3/flow": "2.3.*@dev"
+        "typo3/flow": "2.3.*@dev",
+        "typo3/twitter-bootstrap": "1.0.2"
     },
     "require-dev": {
         "typo3/buildessentials": "2.2.*",
