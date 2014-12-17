@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "586004aa0e07a61641aa59600e6bac6a",
+    "hash": "7aeff8df7d35fee8961810c2ca40fc0f",
     "packages": [
         {
             "name": "composer/installers",
@@ -519,12 +519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "8a0b96e65d2399d6f95b75de11134843a2c61feb"
+                "reference": "31df573a9f3797b8fc2fb92e4229a1c582d41598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/8a0b96e65d2399d6f95b75de11134843a2c61feb",
-                "reference": "8a0b96e65d2399d6f95b75de11134843a2c61feb",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/31df573a9f3797b8fc2fb92e4229a1c582d41598",
+                "reference": "31df573a9f3797b8fc2fb92e4229a1c582d41598",
                 "shasum": ""
             },
             "require": {
@@ -578,7 +578,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2014-10-05 18:49:49"
+            "time": "2014-12-17 14:32:07"
         },
         {
             "name": "doctrine/lexer",
@@ -1095,19 +1095,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "afbdb416ca0096d2d6be13c6fe42d20b52656076"
+                "reference": "a98f682780b3f780f1d8ae247cf2aeebdb9cc2c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/afbdb416ca0096d2d6be13c6fe42d20b52656076",
-                "reference": "afbdb416ca0096d2d6be13c6fe42d20b52656076",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/a98f682780b3f780f1d8ae247cf2aeebdb9cc2c4",
+                "reference": "a98f682780b3f780f1d8ae247cf2aeebdb9cc2c4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "symfony/css-selector": "~2.0"
+                "symfony/css-selector": "~2.3"
             },
             "suggest": {
                 "symfony/css-selector": ""
@@ -1139,7 +1139,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2014-12-02 20:15:53"
+            "time": "2014-12-16 15:17:56"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1148,12 +1148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "50f680f99c702c831314c00220c222aaff8916f8"
+                "reference": "24f2c9ea9353cbb25dc40786272f0b4f42ba3d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/50f680f99c702c831314c00220c222aaff8916f8",
-                "reference": "50f680f99c702c831314c00220c222aaff8916f8",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/24f2c9ea9353cbb25dc40786272f0b4f42ba3d3c",
+                "reference": "24f2c9ea9353cbb25dc40786272f0b4f42ba3d3c",
                 "shasum": ""
             },
             "require": {
@@ -1161,10 +1161,10 @@
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.0",
+                "symfony/config": "~2.0,>=2.0.5",
                 "symfony/dependency-injection": "~2.6",
                 "symfony/expression-language": "~2.6",
-                "symfony/stopwatch": "~2.2"
+                "symfony/stopwatch": "~2.3"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -1197,7 +1197,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2014-12-12 16:23:01"
+            "time": "2014-12-16 20:28:45"
         },
         {
             "name": "symfony/finder",
@@ -1319,7 +1319,7 @@
             "source": {
                 "type": "git",
                 "url": "git://git.typo3.org/Packages/TYPO3.Docs.git",
-                "reference": "11f557a9df07e6910a2c4728a6cc22e3b141aea4"
+                "reference": "5a304ab2bd0d216924458f3744853d519e0fe6c8"
             },
             "require": {
                 "flowpack/expose": "*",
@@ -1339,7 +1339,7 @@
                 "GPL-3.0+"
             ],
             "description": "The orchestration package for the TYPO3 documentation rendering system",
-            "time": "2014-11-18 13:26:47"
+            "time": "2014-12-17 17:55:38"
         },
         {
             "name": "typo3/eel",
