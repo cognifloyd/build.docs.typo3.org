@@ -159,6 +159,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       }
     }
 
+	# This installs/configures the RabbitMQ *server* (not a client lib) for use in the dev environment.
+	# The rabbitmq client library is a php library and so shouldn't be installed by chef.
     chef.run_list = [
       "recipe[site-builddocstypo3org::default]",
       "recipe[rabbitmq::default]",
