@@ -69,6 +69,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Share site folder into releases folder
   config.vm.synced_folder ".", "/var/www/vhosts/build.docs.typo3.org/releases/current",
                           type: "rsync",
+                          group: "www-data",
                           rsync__exclude: [
                             ".git/",
                             ".idea/",
@@ -161,10 +162,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     chef.run_list = [
       "recipe[site-builddocstypo3org::default]",
-      "recipe[rabbitmq::default]",
-      "recipe[rabbitmq::plugin_management]",
-      "recipe[rabbitmq::user_management]",
-      "recipe[rabbitmq::mgmt_console]"
+      "recipe[site-builddocstypo3org::dev_vagrant]"
     ]
   end
 end

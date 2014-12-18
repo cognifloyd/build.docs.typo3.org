@@ -84,23 +84,22 @@ The final step is to enter the VM and trigger the rendering.
   cd /var/www/vhosts/build.docs.typo3.org/releases/current
   ./flow help
 
-  -> check the commands "document:*" exist
+  -> make sure the "import:packages" command is availble.
 
   # Update the Schema
   ./flow doctrine:migrate
 
-  # Prepare 10 documents from Git and 10 from TER
+  # Add a user for web access
+  ./flow user:create test test test test
+
+  # Prepare 10 packages from Git and 10 from TER
   # Notice argument "git" and "ter" are optional. If omitted, both TER and Git will be assumed
-  ./flow document:importall --limit 10 git
-  ./flow document:importall --limit 10 ter
+  ./flow import:packages --limit 10 --sources git
+  ./flow import:packages --limit 10 --sources ter
 
   # Process the queue
   # Notice: normally this command should be run in another terminal within a screen
-  ./flow job:work git
-
-
-  # Process the queue
-  ./flow queue:start
+  ./flow job:work org.typo3.docs.combo
 </pre>
 
 Installation of the software
